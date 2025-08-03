@@ -1,138 +1,150 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html><html lang="en">
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Deepa ❤️ Akshay | Our Love Story</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <title>Our Love Journey — Akshay ❤️ Deepa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
   <style>
-    :root {
-      --bg: #fff0f5;
-      --accent: #ff6f91;
-      --text: #333;
-    }body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-  background: var(--bg);
-  color: var(--text);
-}
-
-header {
-  text-align: center;
-  padding: 3rem 1rem 2rem;
-  background: linear-gradient(145deg, #ffe0ec, #ffd4e3);
-  color: var(--accent);
-}
-
-header h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.8rem;
-  margin-bottom: 0.3rem;
-}
-
-header p {
-  font-size: 1.1rem;
-}
-
-.map-timeline {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  padding: 2rem;
-}
-
-.dot {
-  background: var(--accent);
-  color: white;
-  border-radius: 10px;
-  padding: 1rem;
-  width: 260px;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
-}
-
-.dot:hover {
-  transform: scale(1.03);
-}
-
-.message-box {
-  max-width: 700px;
-  margin: 3rem auto;
-  background: white;
-  border-left: 6px solid var(--accent);
-  padding: 2rem;
-  font-size: 1rem;
-  border-radius: 8px;
-  line-height: 1.6;
-}
-
-.hidden-letter {
-  text-align: center;
-  margin-top: 3rem;
-}
-
-button {
-  background: var(--accent);
-  color: white;
-  border: none;
-  padding: 0.7rem 1.5rem;
-  font-size: 1rem;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-button:hover {
-  background: #ff3c6f;
-}
-
-audio {
-  display: none;
-}
-
-footer {
-  text-align: center;
-  font-size: 0.9rem;
-  padding: 2rem 1rem;
-  color: #999;
-}
-
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #fff0f5, #ffe6e6);
+      color: #4a2c2a;
+    }
+    h1, h2, h3 {
+      font-family: 'Great Vibes', cursive;
+    }
+    .page {
+      display: none;
+      min-height: 100vh;
+      padding: 2rem;
+      text-align: center;
+      position: relative;
+    }
+    .page.active {
+      display: block;
+    }
+    .btn {
+      background: #ffccd5;
+      border: none;
+      padding: 10px 20px;
+      font-size: 18px;
+      border-radius: 30px;
+      margin-top: 20px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .map-img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+    .lock {
+      margin: 2rem auto;
+      font-size: 24px;
+    }
+    .timeline-map {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 2rem 0;
+    }
+    .timeline-item {
+      background: rgba(255, 240, 245, 0.8);
+      padding: 1rem;
+      border-radius: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      width: 90%;
+      max-width: 600px;
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .love-frame {
+      border: 5px double #e91e63;
+      padding: 2rem;
+      border-radius: 30px;
+      margin-top: 2rem;
+      background: #fff;
+      box-shadow: 0 4px 30px rgba(0,0,0,0.2);
+    }
+    audio {
+      display: none;
+    }
   </style>
-</head><body>
-  <header>
-    <h1>Akshay ❤️ Deepa</h1>
-    <p>A soulful rewind of our 1.5 years together</p>
-  </header>  <section class="map-timeline">
-    <div class="dot" onclick="alert('📩 16/04/2024 — Our very first Telegram message. That single ping started everything.')">16 Apr 2024</div>
-    <div class="dot" onclick="alert('🎂 07/09/2024 — I met you on your birthday. That smile, that tight hug… unforgettable.')">07 Sep 2024</div>
-    <div class="dot" onclick="alert('😢 08/09/2024 — When I cried and you held me to your chest. Your strength became mine.')">08 Sep 2024</div>
-    <div class="dot" onclick="alert('💋 08/03/2025 — Our first kiss on Holi week. We got closer than ever.')">08 Mar 2025</div>
-    <div class="dot" onclick="alert('🏍️ 04/06/2025 — Our dreamy scooty ride. From pickup to temple visit, every second magical.')">04 Jun 2025</div>
-    <div class="dot" onclick="alert('🛐 04/08/2025 — Shrawan Somwari. Together we prayed to Lord Shiva. A step closer to our forever.')">04 Aug 2025</div>
-  </section>  <section class="message-box">
-    <h2>From Your Panditji 💌</h2>
-    <p>
-      Hello, mera bachaaa, my laddoooooo. It's been 1.5 years since our souls crossed paths on Telegram, and today, I want to take you through every heartbeat we've shared — one step, one emotion at a time.
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="https://drive.google.com/uc?export=download&id=1EjeLnZcu8BUsT8tXuwXI6PH4p4ROPdwd" type="audio/mp3">
+  </audio>  <!-- Page 1: Home -->  <div class="page active" id="page1">
+    <h1>Welcome My Love 💖</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Map_of_Bihar_and_Jharkhand.jpg" alt="Map" class="map-img">
+    <p style="margin-top: 20px">Where did we first meet?</p>
+    <button class="btn" onclick="checkAnswer('07/09/2024')">07/09/2024</button>
+    <button class="btn" onclick="checkAnswer('Wrong')">01/01/2025</button>
+  </div>  <!-- Page 2: Lock -->  <div class="page" id="page2">
+    <h2>🔐 Unlock Our Rewind</h2>
+    <div class="lock">
+      <input type="password" id="key" placeholder="Enter the secret password...">
+      <button class="btn" onclick="checkKey()">Unlock</button>
+    </div>
+  </div>  <!-- Page 3: Rewind Message -->  <div class="page" id="page3">
+    <h2>✨ Our Rewind — 1.5 Years of Us ✨</h2>
+    <p class="love-frame">
+      Hello, mera laddooooo 💕<br><br>
+      It's been 1.5 years since I first messaged you on 16/04/2024, and today is 04/08/2025. From the moment I chose to meet you on your birthday (07/09/2024), every single day with you has been nothing short of magical. <br><br>
+      I remember how you ran into my arms and hugged me so tightly. How you held me close when I broke down, how your friends helped us through tough times — and how you chose to stay with me, no matter what.<br><br>
+      We rode through rain to Hudco Lake. We shared our first kiss on 08/03/2025. We met again on 04/06/2025 — morning rides, college visit, your old home. And now we're going to pray together on the final Somwari of Shravan. <br><br>
+      You gave me strength, shaped my heart, and taught me what true love and loyalty means. This website, this story — is just a glimpse of what you've meant to me. 💞
     </p>
-    <p>
-      We’ve crossed storms and sunsets, sister’s warnings and stolen hugs, heavy rains and scooty rides. I still feel the warmth of your hug on 07/09, the tremble in my chest when you calmed me on 08/09, and our first kiss like fire and devotion.
-    </p>
-    <p>
-      I may not be the best, but with you — I want to be better, responsible, ready. When you touched my heart, you rewrote it. From being distracted and lost to now finding purpose in becoming someone worthy of asking for your hand, of building a future with you.
-    </p>
-    <p>
-      This isn't a simple page; it's a canvas of everything we've been, are, and will become. I don't just love you, Deepa. I *feel* you, I *breathe* you. You're my sukoon. And this is just the beginning.
-    </p>
-    <p style="text-align:right; font-weight:bold;">Forever yours,<br>Akshay aka your Panditji 🫂💋🧿♾️</p>
-  </section>  <section class="hidden-letter">
-    <button onclick="alert('I promise I’ll marry you. When the time is right, when you pass CA Intermediate, or when I’m ready to face the world for you. You’re not just my present; you’re my entire future.')">💍 A Promise Hidden for You</button>
-  </section>  <audio autoplay loop>
-    <source src="https://docs.google.com/uc?export=download&id=1EjeLnZcu8BUsT8tXuwXI6PH4p4ROPdwd" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>  <footer>
-    Designed with infinite love by Akshay ❤️ #akshdeep #wewillmakeit1907
-  </footer>
-</body></html>
+    <button class="btn" onclick="goToPage(4)">Continue</button>
+  </div>  <!-- Page 4: Timeline Map -->  <div class="page" id="page4">
+    <h2>📍 Our Journey So Far</h2>
+    <div class="timeline-map">
+      <div class="timeline-item">📩 First Text: 16 April 2024 — Telegram DM</div>
+      <div class="timeline-item">🎂 First Meet: 07 Sept 2024 — Your Birthday Hug</div>
+      <div class="timeline-item">🫂 Breakdown & Love: 08 Sept 2024 — You made me stronger</div>
+      <div class="timeline-item">🌧️ Hudco Ride in Rain: Sept 2024</div>
+      <div class="timeline-item">💋 First Kiss: 08 March 2025</div>
+      <div class="timeline-item">🛵 June Ride: 04 June 2025</div>
+      <div class="timeline-item">🕉️ Final Somwari Darshan: 04 August 2025</div>
+    </div>
+    <button class="btn" onclick="goToPage(5)">Final Page</button>
+  </div>  <!-- Page 5: Love Frame -->  <div class="page" id="page5">
+    <h2>💌 My Final Words</h2>
+    <div class="love-frame">
+      My Deepa,<br><br>
+      You're not just my love, you're my peace, my anchor, my forever. You've stood by me, changed me, loved me like no one ever could.<br><br>
+      I promise to work hard, to come back stronger, to ask your family for your hand — and to build a future, a family, and a forever with you. 💍<br><br>
+      Sorry My Love — Can We Rewind Again and Continue This Beautiful Journey? ❤️
+    </div>
+  </div>  <script>
+    function checkAnswer(ans) {
+      if(ans === '07/09/2024') {
+        goToPage(2);
+      } else {
+        alert('Oops! Try again, laddoooooo 😘');
+      }
+    }
+
+    function checkKey() {
+      const key = document.getElementById('key').value;
+      if(key === '1907') {
+        goToPage(3);
+      } else {
+        alert('Incorrect password. Try again 💌');
+      }
+    }
+
+    function goToPage(num) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.getElementById('page' + num).classList.add('active');
+    }
+  </script></body>
+</html>
