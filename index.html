@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome, Deepa 🗺️</title>
+  <title>Akshay🫀Deepa</title>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
@@ -12,7 +12,7 @@
       font-family: 'Montserrat', sans-serif;
     }
     body {
-      background: linear-gradient(to right, #fdeff9, #ec38bc);
+      background-color: #fdf6f9;
       overflow: hidden;
       height: 100vh;
     }
@@ -22,8 +22,8 @@
       height: 100vh;
     }
     .map-bg {
-      background: url('https://upload.wikimedia.org/wikipedia/commons/7/70/India_states_blank_map.svg') center/contain no-repeat;
-      filter: brightness(0.6);
+      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/India_location_map.svg/1920px-India_location_map.svg.png') center/contain no-repeat;
+      filter: brightness(0.7);
       width: 100%;
       height: 100%;
       position: absolute;
@@ -37,71 +37,72 @@
     }
     .marker {
       position: absolute;
-      width: 20px;
-      height: 20px;
-      background-color: #e91e63;
+      width: 24px;
+      height: 24px;
+      background-color: #d81b60;
       border-radius: 50%;
       border: 3px solid white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+      box-shadow: 0 0 12px rgba(0,0,0,0.4);
     }
     .purnea {
-      top: 55%;
-      left: 52%;
+      top: 63%;
+      left: 45%;
     }
     .jamshedpur {
-      top: 53%;
-      left: 60%;
+      top: 58%;
+      left: 65%;
     }
     .line {
       position: absolute;
-      top: 54.3%;
-      left: 52%;
-      width: 8%;
+      top: 60.5%;
+      left: 45%;
+      width: 20%;
       height: 3px;
-      background: repeating-linear-gradient(to right, #e91e63 0%, #ffffff 50%, #e91e63 100%);
+      background: #d81b60;
       transform: rotate(5deg);
       z-index: 2;
+      box-shadow: 0 0 10px #d81b60;
     }
     .welcome-text {
       position: absolute;
-      top: 12%;
+      top: 10%;
       width: 100%;
       text-align: center;
-      color: #fff;
+      color: #880e4f;
       font-family: 'Great Vibes', cursive;
-      font-size: 3em;
+      font-size: 3.2em;
       z-index: 4;
-      text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
     }
     .quiz-box {
       position: absolute;
-      bottom: 8%;
+      bottom: 10%;
       width: 100%;
       text-align: center;
       z-index: 4;
     }
     .quiz-box h3 {
-      color: #fff;
+      color: #6a1b9a;
       font-size: 1.6em;
-      margin-bottom: 1.2em;
-      font-weight: 500;
+      margin-bottom: 1em;
     }
     .quiz-box button {
-      background: #b10066;
-      color: white;
+      background: #fff;
+      color: #6a1b9a;
       padding: 12px 24px;
       margin: 8px;
-      border: none;
+      border: 2px solid #ba68c8;
       border-radius: 30px;
       cursor: pointer;
-      font-size: 1.1em;
+      font-size: 1em;
       font-weight: bold;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-      transition: all 0.3s ease;
+      transition: all 0.3s;
+      box-shadow: 0 4px 8px rgba(106,27,154,0.2);
     }
     .quiz-box button:hover {
-      background: #d81b60;
-      transform: scale(1.05);
+      background: #ba68c8;
+      color: white;
+      box-shadow: 0 6px 12px rgba(106,27,154,0.4);
     }
   </style>
 </head>
@@ -115,7 +116,7 @@
     <div class="line"></div>
     <div class="welcome-text">Welcome to Our Love Journey 💕</div>
     <div class="quiz-box">
-      <h3>When did we first meet, meri Jaan?</h3>
+      <h3>Where did we first meet, meri Jaan?</h3>
       <button onclick="checkAnswer(true)">On your Birthday 🎂</button>
       <button onclick="checkAnswer(false)">On Holi 🌸</button>
       <button onclick="checkAnswer(false)">On Somwari 🙏</button>
